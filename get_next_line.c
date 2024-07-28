@@ -6,7 +6,7 @@
 /*   By: giromeo <giromeo@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 16:15:19 by giromeo           #+#    #+#             */
-/*   Updated: 2024/05/22 16:15:57 by giromeo          ###   ########.fr       */
+/*   Updated: 2024/07/28 09:39:12 by giromeo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ char	*readbuf(int fd, char *storage)
 
 char	*get_next_line(int fd)
 {
-	static char	*storage = {0};
+	static char	*storage = NULL;
 	char		*line;
 
 	if (fd < 0)
